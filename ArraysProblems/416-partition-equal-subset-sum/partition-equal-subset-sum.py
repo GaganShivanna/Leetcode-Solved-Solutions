@@ -12,6 +12,6 @@ class Solution:
                 return False
             if (i, target) in memo:
                 return memo[(i, target)]
-            memo[(i, target)] = (dfs(i + 1, target - nums[i]) or dfs(i + 1, target))
+            memo[(i, target)] = (dfs(i + 1, target) or dfs(i + 1, target - nums[i]))
             return memo[(i, target)]
         return dfs(0, target)
