@@ -19,4 +19,3 @@ class Solution:
             if rightside:
                 res.append(rightside.val)
         return res
-
